@@ -1,0 +1,115 @@
+{
+    "pieces": {
+        "the_pawn": {
+            "location": [
+                "a2", "b2", "c2", "d2", "e2", "f2", "g2", "h2",
+                "a7", "b7", "c7", "d7", "e7", "f7", "g7", "h7"
+            ],
+            "icon": "♙"
+        },
+        "the_bishop": {
+            "location": [
+                "c1",
+                "f1",
+                "c8",
+                "f8"
+            ],
+            "icon": "♗"
+        },
+        "the_knight": {
+            "location": [
+                "b1",
+                "g1",
+                "b8",
+                "g8"
+            ],
+            "icon": "♘"
+        },
+        "the_rook": {
+            "location": [
+                "a1",
+                "h1",
+                "a8",
+                "h8"
+            ],
+            "icon": "♖"
+        },
+        "the_queen": {
+            "location": [
+                "d1",
+                "d8"
+            ],
+            "icon": "♕"
+        },
+        "the_king": {
+            "location": [
+                "e1",
+                "e8"
+            ],
+            "icon": "♔"
+        }
+    },
+    "movement": {
+        "the_pawn": {
+            "directions": "front",
+            "movement": {
+                "front": 2
+            },
+            "attack": {
+                "movement": "front_r|front_l",
+                "distance": 1
+            }
+        },
+        "the_bishop": {
+            "directions": "front_r|front_l|back_r|back_l",
+            "movement": {
+                "front_r": 100,
+                "front_l": 100,
+                "back_r": 100,
+                "back_l": 100
+            }
+        },
+        "the_knight": {
+            "directions": "front_r|front_l|back_r|back_l",
+            "movement": {
+                "front_r": 100,
+                "front_l": 100,
+                "back_r": 100,
+                "back_l": 100
+            }
+        },
+        "the_rook": {
+            "directions": "left|right|front|back",
+            "movement": {
+                "left": 100,
+                "right": 100,
+                "front": 100,
+                "back": 100
+            }
+        },
+        "the_queen": {
+            "directions": "left|right|front|back|front_r|front_l|back_r|back_l",
+            "movement": {
+                "left": 50,
+                "right": 50,
+                "front": 50,
+                "back": 50,
+                "front_r": 50,
+                "front_l": 50,
+                "back_r": 50,
+                "back_l": 50
+            }
+        },
+        "the_king": {
+            "directions": "front",
+            "movement": {
+                "front": 2
+            },
+            "attack": {
+                "front_r": 1,
+                "front_l": 1
+            }
+        }
+    }
+
+}
